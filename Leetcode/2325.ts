@@ -39,8 +39,6 @@ function getDedupedKey(key: string)
             result.push(letter);
         }
     }
-
-    console.log('the result', result);
-
+    
     return result;
 }
