@@ -12,12 +12,14 @@ public class Solution
         // their expected names this somehow passes. 
 
         // Note: Problem #27 is equally as strange. 
-        // Below is how I would solve #26 in a normal way. When asked to remove the duplicates 
-        // from the array I would create a new collection to add the values and check to see
-        // if they had already been added.
+        // Below is how I would solve #26 in a normal way, which would just be the first 
+        // foreach loop. 
+        // The only reason there's another loop is because of the weird requirement to 
+        // return the original array with the unique values at the beginning and the remaining 
+        // values left as they were.
 
         // Getting an array like `int[] nums = new int[] {1, 1, 2};`
-        // And returning it as `int[] nums = new int[] {1, 2, 2};` with a return value of 2 
+        // and returning it as `int[] nums = new int[] {1, 2, 2};` with a return value of 2 
         // is strange. Why not return new int[] {1, 2};?`
         // I don't see the actual practical application of this, if I want unique values then 
         // why return the original array with its original length and essentially junk data 
